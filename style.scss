@@ -124,4 +124,22 @@ h3 {
     background-color: white;
     color: $green_light;
     border-color: $green_light;
+    position: absolute;
+    right: 0px;
+}
+
+#also_connexion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+}
+
+@mixin parametre_remember{
+    accent-color: $green_light;
+}
+
+#remember:checked {
+    @include parametre_remember;
 }
