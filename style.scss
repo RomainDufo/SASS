@@ -4,6 +4,22 @@
     background-color: $green_dark;
 }
 
-#container{
+@mixin dimension-container {
+    width: 1296px;
+    height: 714px;
+    border-radius: 10px;
+}
+
+#container {
     background-color: $white;
+    @include dimension-container;
+}
+
+@mixin dimension-imgae {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px; 
+}
+
+#image{
+    @include dimension-imgae;
 }

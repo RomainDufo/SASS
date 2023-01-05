@@ -4,6 +4,14 @@
 
 #container {
   background-color: white;
+  width: 1296px;
+  height: 714px;
+  border-radius: 10px;
+}
+
+#image {
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
