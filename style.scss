@@ -1,25 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
 @import "couleurs";
 
 #body {
     background-color: $green_dark;
+    font-family: Inter;
 }
 
-@mixin dimension-container {
+@mixin container {
     width: 1296px;
     height: 714px;
-    border-radius: 10px;
+    border-radius: 25px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
 }
 
 #container {
     background-color: $white;
-    @include dimension-container;
+    @include container;
 }
 
-@mixin dimension-imgae {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; 
+@mixin image {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
 }
 
-#image{
-    @include dimension-imgae;
+#image {
+    @include image;
+}
+
+@mixin left {
+    position: absolute;
+    left: 61px;
+    top: 47px;
+}
+
+#left {
+    @include left;
+}
+
+@mixin h3 {
+    margin-top: 65px;
+    width: 400px;
+    height: 72px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+h3 {
+    @include h3;
+}
+
+@mixin label {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    color: $green_dark;
+}
+
+.label_form {
+    @include label;
+}
+
+@mixin input {
+    width: 422px;
+    height: 56px;
+    border-radius: 8px;
+    border: 1px solid;
+}
+
+.input {
+    @include input;
+}
+
+@mixin parametre_forgot {
+    position: absolute;
+    right: 0px;
+}
+
+#forgot {
+    @include parametre_forgot;
+}
+
+@mixin position_checkbox {
+    margin-top: 15px;
+}
+
+#container_checkbox {
+    @include position_checkbox();
+}
+
+@mixin parametre_button {
+    width: 199px;
+    height: 48px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 100%;
+    border: none;
+    border: 1px solid;
+}
+
+.button {
+    @include parametre_button;
+}
+
+#button1 {
+    background-color: $green_light;
+    color: white;
+    border-color: $green_light;
+}
+
+#button2 {
+    background-color: white;
+    color: $green_light;
+    border-color: $green_light;
 }

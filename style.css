@@ -1,17 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap");
 #body {
   background-color: #355B3E;
+  font-family: Inter;
 }
 
 #container {
   background-color: white;
   width: 1296px;
   height: 714px;
-  border-radius: 10px;
+  border-radius: 25px;
+  position: absolute;
+  top: 10%;
+  left: 10%;
 }
 
 #image {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+#left {
+  position: absolute;
+  left: 61px;
+  top: 47px;
+}
+
+h3 {
+  margin-top: 65px;
+  width: 400px;
+  height: 72px;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.label_form {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: #355B3E;
+}
+
+.input {
+  width: 422px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid;
+}
+
+#forgot {
+  position: absolute;
+  right: 0px;
+}
+
+#container_checkbox {
+  margin-top: 15px;
+}
+
+.button {
+  width: 199px;
+  height: 48px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  margin-top: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  border: none;
+  border: 1px solid;
+}
+
+#button1 {
+  background-color: #029664;
+  color: white;
+  border-color: #029664;
+}
+
+#button2 {
+  background-color: white;
+  color: #029664;
+  border-color: #029664;
 }
 
 /*# sourceMappingURL=style.css.map */

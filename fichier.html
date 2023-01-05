@@ -22,32 +22,31 @@
             <p>Welcome Back, Please login to your account</p>
             <form action="">
                 <div>
-                    <label for="name">Email</label>
-                    <input type="text" id="mail" name="mail" placeholder="robert.langster@gmail.com" />
+                    <label class="label_form" for="name">Email</label> <br>
+                    <input class="input" type="text" id="mail" name="mail" placeholder="robert.langster@gmail.com" />
                 </div>
 
                 <div class="password">
-                    <input type="checkbox" class="password-toggle" checked>
-                    <div class="password-background"></div>
                     <div class="toggle-eye open">
                         <ion-icon name="eye-outline"></ion-icon>
                     </div>
                     <div class="toggle-eye close">
                         <ion-icon name="eye-off-outline"></ion-icon>
                     </div>
-                    <input type="text" class="password-input" placeholder="robert.langster@gmail.com">
+                    <label class="label_form" for="password">Password</label> <br>
+                    <input class="input" type="text" class="password-input" placeholder="......">
                 </div>
 
-                <div>
+                <div id="container_checkbox">
                     <input type="checkbox" id="remember" name="remember" checked>
                     <label for="remember">Remember me</label>
 
-                    <a href="#">Forgot password?</a>
+                    <a id="forgot" href="#">Forgot password?</a>
                 </div>
 
-                <div>
-                    <input type="button" value="Login">
-                    <input type="button" value="Sign Up">
+                <div id="button_form">
+                    <input id="button1" class="button" type="button" value="Login">
+                    <input id="button2" class="button" type="button" value="Sign Up">
                 </div>
             </form>
             <div id="also_connexion">
